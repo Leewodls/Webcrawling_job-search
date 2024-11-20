@@ -1,0 +1,1 @@
+9999999999{"name": "Extractor", "version": "0.5", "summary": "bindings for GNU libextractor, the metadata extractor", "platform": "windows,Linux,MacOS X,Solaris,FreeBSD", "requires_dist": null, "requires_python": null, "files": [], "_cache_version": "1.0.0"}

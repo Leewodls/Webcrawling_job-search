@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Scrapper</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+  <!--pico-->
+</head>
+<body>
+  
+  <main class="container">  <!-- 중앙으로 배치 -->
+    <hgroup>
+      <h1>"{{keyword}}"에 대한 일자리 검색 결과: </h1>
+    <a target="_blank" href = "/export?keyword={{keyword}}">Export to file</a> 
+    </hgroup>
+    <figure>  <!-- 가로로 스크롤 -->
+    <table role="grid">  <!-- 가로줄 생성 -->
+      <thead>
+        <tr>   <!-- table Row -->
+          <th>Position</th>
+          <th>Company</th>
+          <th>Location</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for job in jobs %}
+        <tr>
+          <td>{{job.position}}</td>
+          <td>{{job.company}}</td>
+          <td>{{job.location}}</td>
+          <td><a href="{{job.link}}" targrt="_blank">Apply now 
+            &rarr;</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </figure>
+  </main>
+</body>
+</html>
