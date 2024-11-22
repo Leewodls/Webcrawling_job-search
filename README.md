@@ -30,4 +30,4 @@
 	•	Selenium: 구인 사이트에서 동적으로 데이터를 가져오기 위해 사용.
 	•	BeautifulSoup: HTML 파싱 및 데이터 추출.
 	•	Flask: 웹 애플리케이션 서버 구현.
-	•	Pico.css: 간단하고 아름다운 UI를 위한 CSS 프레임워크.
+	•	Pico.css: CSS 프레임워크.
